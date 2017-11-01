@@ -1,0 +1,72 @@
+// font: 
+$quest: 'Questrial', sans-serif;
+
+// colors:
+$primary: #FBBD02;
+$secondary: #019F85;
+$background: #49463B;
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0px auto;
+  background: $background;
+}
+
+.nav {
+  
+  ul {
+    margin: 5% 2% auto;
+    list-style-type: none;
+    display: table;
+    
+    li {  
+      vertical-align: middle;
+      display: table-cell;
+      line-height: 17vw;
+      margin: 2vw;
+      width: 17vw;
+      height: 17vw;
+      float: left;
+      font-family: $quest;
+      font-size: 3vw;
+      text-shadow: 0 5px 5px $background;
+      background: linear-gradient(-90deg, $secondary, $secondary);
+      color: $primary;     
+      border-radius: 50%;
+      transition-delay: 2s;
+      transition: .5s;
+      
+
+      &:hover {
+        cursor: pointer;
+        animation: 2s onHover;
+        border: solid 2px $primary;
+        transition: .5s;
+      }
+      
+      &:active {
+        color: $primary;
+        background: $background;
+        border-color: $primary;
+        transition: .5s;
+      }
+     
+      i {
+        font-size: 12vw; 
+        text-shadow: 0 10px 5px $background;
+      }
+    }
+  }
+}
+
+ @keyframes onHover {
+   0% {transform: rotate(0deg)}
+   10% {transform: rotate(-45deg)}
+   15% {transform: rotate(15deg)}
+   20% {transform: rotate(-10deg)}
+   25% {transform: rotate(5deg)}
+   30% {transform: rotate(-5deg)}
+   35% {transform: rotate(0deg)}
+   100% {transform: rotate(0deg)}
+}
