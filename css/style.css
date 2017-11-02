@@ -24,24 +24,47 @@ body {
   background: linear-gradient(-90deg, #019F85, #019F85);
   color: #FBBD02;
   border-radius: 50%;
-  transition-delay: 2s;
   transition: .5s;
 }
 .nav ul li:hover {
   cursor: pointer;
   animation: 2s onHover;
   border: solid 2px #FBBD02;
-  transition: .5s;
 }
 .nav ul li:active {
-  color: #FBBD02;
+  background: #49463B;
+}
+.nav ul li.social {
+  border: solid 2px white;
+  background: #49463B;
+  transition: .25s;
+}
+.nav ul li.social.twitter {
+  color: #00aced;
+}
+.nav ul li.social.facebook {
+  color: #3B5998;
+}
+.nav ul li.social.insta {
+  color: #6dc993;
+}
+.nav ul li.social.snap {
+  color: #fffc00;
+}
+.nav ul li.social:hover {
+  border: solid 2px #FBBD02;
+}
+.nav ul li.social:active {
   background: #49463B;
   border-color: #FBBD02;
-  transition: .5s;
 }
 .nav ul li i {
   font-size: 12vw;
-  text-shadow: 0 10px 5px #49463B;
+  text-shadow: -1px 1px 1px white;
+  transition: .25s;
+}
+.nav ul li i:active {
+  text-shadow: none;
 }
 
 @keyframes onHover {

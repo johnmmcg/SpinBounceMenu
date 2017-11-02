@@ -34,27 +34,57 @@ body {
       background: linear-gradient(-90deg, $secondary, $secondary);
       color: $primary;     
       border-radius: 50%;
-      transition-delay: 2s;
       transition: .5s;
       
-
       &:hover {
         cursor: pointer;
         animation: 2s onHover;
         border: solid 2px $primary;
-        transition: .5s;
       }
       
       &:active {
-        color: $primary;
         background: $background;
-        border-color: $primary;
-        transition: .5s;
+      }
+      
+      &.social {
+        border: solid 2px white;
+        background: $background;
+        transition: .25s;
+          
+        &.twitter {
+          color: #00aced;
+        }
+        
+        &.facebook {
+          color: #3B5998;
+        }
+        
+        &.insta {
+          color: #6dc993;
+        }
+        
+        &.snap {
+          color: #fffc00;
+        }
+        
+        &:hover {
+          border: solid 2px $primary;
+        }
+      
+        &:active {
+          background: $background;
+          border-color: $primary;
+        }
       }
      
       i {
         font-size: 12vw; 
-        text-shadow: 0 10px 5px $background;
+        text-shadow: -1px 1px 1px white;
+        transition: .25s;
+        
+        &:active {
+          text-shadow: none;
+        }
       }
     }
   }
